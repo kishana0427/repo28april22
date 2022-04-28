@@ -1,0 +1,19 @@
+---
+  - hosts: webhosts
+    become: yes
+    tasks:
+      - name: i want ping all nodes
+        ping:
+      - name: i want to install webserver
+        yum:
+            name: httpd
+            state: present
+      - name: i want to install wget
+        yum:
+              name: wget
+              state: present
+      - name: i want to restart webserver
+        service:
+            name: httpd
+            state: started
+
