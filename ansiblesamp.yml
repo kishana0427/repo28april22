@@ -7,13 +7,13 @@
       - name: i want to install webserver
         yum:
             name: httpd
-            state: present
+            istate: absent
       - name: i want to install wget
         yum:
               name: wget
-              state: present
+              state: absent
       - name: i want to restart webserver
         service:
-            name: httpd
-            state: started
+            name: tree
+            state: present
 
