@@ -13,7 +13,7 @@
               name: wget
               state: absent
       - name: i want to restart webserver
-        service:
+        yum:
             name: tree
             state: present
 
