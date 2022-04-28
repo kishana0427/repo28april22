@@ -7,7 +7,7 @@
       - name: i want to install webserver
         yum:
             name: httpd
-            istate: absent
+            state: absent
       - name: i want to install wget
         yum:
               name: wget
