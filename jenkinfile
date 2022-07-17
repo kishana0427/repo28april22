@@ -1,5 +1,5 @@
 node {
-    stage('clone kishan java project'){
+    stage('clone kish java project'){
         git 'https://github.com/maha4ntvc/mahalogin.git'
         stage('execute maven target'){
             sh 'mvn install'
